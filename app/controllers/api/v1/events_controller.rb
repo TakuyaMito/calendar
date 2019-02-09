@@ -2,7 +2,7 @@ require "#{Rails.root}/app/controllers/application_controller.rb"
 
 module Api
   module V1
-    clss EventsController < ApplicationController
+    class EventsController < ApplicationController
       load_and_authorize_resource
       protect_form_forgery except: [:create, :update]
 
